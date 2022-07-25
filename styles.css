@@ -1,0 +1,189 @@
+body {
+    background-color: #121212;
+    height: 100vh;
+    margin: 0;
+
+    background:
+        linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+        linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+        linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+        linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+        linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+        linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+        background-color: #131313;
+        background-size: 20px 20px;
+}
+
+.lightsaber {
+    width: 1em;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    left: calc(50vw - 0.5em);
+    top: 32vh;
+}
+
+.lightsaber-blade {
+    width: 75%;
+    height: 75%;
+    filter: drop-shadow(.5rem -.5rem 1rem #3c90ea) drop-shadow(-.5rem -.5rem 1rem #3c90ea);
+    margin: 0;
+    margin-left: -4px;
+    z-index: 1;
+    border-color: #50d4f6;
+}
+
+.lightsaber-blade-tip {
+    background-color: #fdfefe;
+    width: 100%;
+    height: 8%;
+    border-radius: 50% 50% 0 0;
+    border-style: solid;
+    border-width: 2px 2px 0 2px;
+    border-color: inherit;
+}
+
+.lightsaber-blade-shaft{
+    background-color: #fdfefe;
+    width: 100%;
+    height: 92%;
+    border-style: solid;
+    border-width: 0 2px 0 2px;
+    border-color: inherit;
+}
+
+.lightsaber-handle {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.lightsaber-handle-emmitter1 {
+    width: 100%;
+    height: 10%;
+    background-color: #afafaf;
+    border-radius: 10%;
+    border-style: outset;
+    border-width: 2px;
+}
+
+.lightsaber-handle-emmitter2 {
+    width: 80%;
+    height: 10%;
+    background-color: #afafaf;
+    
+}
+
+.lightsaber-handle-emmitter3 {
+    width: 50%;
+    height: 14%;
+    background-color: black;
+}
+
+.lightsaber-handle-emmitter4 {
+    width: 80%;
+    height: 5%;
+    background-color: #afafaf;
+    border-radius: 10%;
+    border-style: outset;
+    border-width: 2px;
+}
+
+.lightsaber-handle-hilt {
+    width: 75%;
+    height: 40%;
+    background-color: #afafaf;
+    border-radius: 10%;
+    border-style: outset;
+    border-width: 2px;
+}
+
+.ignite {
+    width: 120px;
+    height: 55px;
+    border-radius: 15px;
+    font-size: x-large;
+    text-shadow: 1px 1px 2px white;
+    color: white;
+    transition: all 0.2s linear;
+    background-color: #121212;
+    border-color: #121212;
+    position: absolute;
+    left: calc(50vw - 60px);
+    top: 78vh;
+    z-index: 0;
+    user-select: none;
+}
+
+.ignite:hover {
+    border-style: solid;
+    border-color: white;
+}
+
+.ignite:active {
+    margin-top: 2px;
+}
+
+.colors {
+    background-color: #121212;
+    width: 300px;
+    height: 80px;
+    position: absolute;
+    margin-left: calc(50vw - 150px);
+    margin-top: 10vh;
+    border-radius: 20px;
+    border-style: outset;
+    border-color: #121212;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.color {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: inset;
+}
+
+.blue {
+    background-color: #15f2fd;
+    border-color: #15f2fd;
+}
+
+.blue:hover {
+    filter: drop-shadow(.1rem .1rem 0.5rem #3c90ea)
+}
+
+.red {
+    background-color: #b42c32;
+    border-color: #b42c32;
+}
+
+.red:hover {
+    filter: drop-shadow(.1rem .1rem 0.5rem #b42c32)
+}
+
+.green {
+    background-color: #2c6512;
+    border-color: #2c6512;
+}
+
+.green:hover {
+    filter: drop-shadow(.1rem .1rem 0.5rem #2c6512)
+}
+
+/* .mouse {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:#15f2fd;
+} */
